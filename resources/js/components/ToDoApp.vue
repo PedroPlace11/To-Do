@@ -24,7 +24,7 @@
         <!-- Em desktop (md+): estática no fluxo, sempre visível (md:translate-x-0, md:transition-none) -->
         <!-- z-30 garante que a sidebar fique acima do backdrop (z-20) -->
         <aside :class="[
-            'flex flex-col bg-gray-50 dark:bg-transparent border-r border-gray-200 dark:border-slate-700 pb-3',
+            'flex flex-col bg-gray-50 dark:bg-slate-900 border-r border-gray-200 dark:border-slate-700 pb-3',
             'w-64 shrink-0 fixed inset-y-0 left-0 z-30',
             'transition-transform duration-200 ease-in-out',
             'md:static md:inset-auto md:z-auto md:translate-x-0 md:transition-none',
