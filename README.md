@@ -1,34 +1,34 @@
 # ✅ To-Do App
 
-To-Do App e uma aplicacao web em Laravel para gestao de tarefas pessoais, com autenticação, perfil de utilizador, autenticação de dois fatores, filtros, calendario, partilha de tarefas e interface responsiva em Vue.
+To-Do App é uma aplicação web em Laravel para gestão de tarefas pessoais, com autenticação, perfil de utilizador, autenticação de dois fatores, filtros, calendário, partilha de tarefas e interface responsiva em Vue.
 
 ---
 
 ## 📋 Funcionalidades
 
-### 📝 Gestao de Tarefas
-- ✅ Criacao, consulta, edicao e remocao de tarefas
-- 🏷️ Definicao de prioridade alta, media e baixa
-- 📅 Configuracao de data de vencimento para organizacao das tarefas
-- ✔️ Atualizacao do estado entre pendente e concluida
+### 📝 Gestão de Tarefas
+- ✅ Criação, consulta, edição e remoção de tarefas
+- 🏷️ Definição de prioridade alta, média e baixa
+- 📅 Configuração de data de vencimento para organização das tarefas
+- ✔️ Atualização do estado entre pendente e concluída
 
-### 🔎 Organizacao e Visualizacao
+### 🔎 Organização e Visualização
 - 📂 Filtros por estado, prioridade e data
-- 📆 Vista de calendario para acompanhar tarefas planeadas
-- 📋 Alternancia entre vista em lista e grelha
-- 📊 Resumo com total de tarefas, pendentes e concluidas
+- 📆 Vista de calendário para acompanhar tarefas planeadas
+- 📋 Alternância entre vista em lista e grelha
+- 📊 Resumo com total de tarefas, pendentes e concluídas
 
-### 👤 Autenticacao e Perfil
+### 👤 Autenticação e Perfil
 - 🔐 Registo e login de utilizadores
-- ✉️ Autenticacao de dois fatores por codigo enviado por email
-- 🙍 Gestao de perfil com atualizacao de nome, email e palavra-passe
-- 🚪 Encerramento de sessao com protecao de rotas autenticadas
+- ✉️ Autenticação de dois fatores por código enviado por email
+- 🙍 Gestão de perfil com atualização de nome, email e palavra-passe
+- 🚪 Encerramento de sessão com proteção de rotas autenticadas
 
-### 🤝 Colaboracao e Experiencia
+### 🤝 Colaboração e Experiência
 - 📤 Partilha de tarefas com outros utilizadores por email
-- 🔔 Notificacoes visuais para operacoes de sucesso e erro
+- 🔔 Notificações visuais para operações de sucesso e erro
 - 🌗 Suporte a tema claro e escuro
-- 📱 Interface adaptada para desktop e dispositivos moveis
+- 📱 Interface adaptada para desktop e dispositivos móveis
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -45,23 +45,23 @@ To-Do App e uma aplicacao web em Laravel para gestao de tarefas pessoais, com au
 ### ✅ Pre-requisitos
 Certifique-se de ter instalado PHP 8.3+, Composer, Node.js, npm e uma base de dados configurada no ficheiro `.env`.
 
-### 1️⃣ Clonar o repositorio
+### 1️⃣ Clonar o repositório
 ```bash
 git clone <url-do-repositorio>
 cd To-Do
 ```
 
-### 2️⃣ Instalacao e configuracao automatica
-Use o script de setup para instalar dependencias, criar o `.env` caso necessario, gerar a chave da aplicacao, executar migrations e compilar os assets:
+### 2️⃣ Instalação e configuração automática
+Use o script de setup para instalar dependências, criar o `.env` caso necessário, gerar a chave da aplicação, executar migrations e compilar os assets:
 ```bash
 composer run setup
 ```
 
-### 3️⃣ Configuracao manual
+### 3️⃣ Configuração manual
 ```bash
 composer install
 cp .env.example .env
-php artisan key:generate
+php artisan key: generate
 php artisan migrate
 npm install
 npm run build
@@ -72,7 +72,7 @@ npm run build
 composer run dev
 ```
 
-### 5️⃣ Aceder a aplicacao
+### 5️⃣ Aceder à aplicação
 Abra http://localhost:8000
 
 ## 🧪 Testes
@@ -155,11 +155,7 @@ php artisan test
 
 ## 📝 Observacoes
 
-- A interface principal da aplicacao carrega a SPA Vue dentro das views Blade.
-- O sistema inclui autenticacao de dois fatores com envio de codigo por email.
-- As rotas de tarefas estao protegidas por autenticacao e devolvem respostas JSON.
+- A interface principal da aplicação carrega a SPA Vue dentro das views Blade.
+- O sistema inclui autenticação de dois fatores com envio de código por email.
+- As rotas de tarefas estão protegidas por autenticação e devolvem respostas JSON.
 - Existe suporte para partilha de tarefas entre utilizadores autenticados.
-
-## 👥 Autor
-
-Desenvolvido no contexto do projeto Inovcorp.
